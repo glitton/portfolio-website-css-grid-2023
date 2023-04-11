@@ -408,7 +408,13 @@ About
 .about-img {
   justify-self: center;
 }
-
+.about-vacation-rental a {
+  color: var(--clr-grey-5);
+  transition: var(--transition);
+}
+.about-vacation-rental a:hover {
+  color: var(--clr-links);
+}
 @media screen and (min-width: 992px) {
   .about-center {
     grid-template-columns: 1fr 1fr;
@@ -418,6 +424,7 @@ About
   }
   .about-img::before {
     left: -2rem;
+    height: 90%;
   }
   .about-info {
     align-self: center;
