@@ -446,10 +446,87 @@ Projects
 
 /*
 =============== 
-Connect
+Contact
 ===============
 */
 
+.contact {
+  min-height: 40vh;
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  margin-top: 5rem 0;
+  display: grid;
+  place-items: center;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.contact::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-primary-10);
+  opacity: 0.7;
+  z-index: -1;
+}
+.video-banner .section-center {
+  margin-bottom: 2rem;
+}
+.video-text {
+  text-align: center;
+  max-width: 30rem;
+}
+.video-text img {
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+.video-banner {
+  background: var(--clr-primary-10);
+  padding: 3rem 5rem 12rem 5rem;
+  text-align: center;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+}
+.contact-methods {
+  margin-top: 3rem;
+  letter-spacing: 1.2px;
+}
+.email {
+  margin-right: 1rem;
+}
+.fa-envelope,
+.fa-mobile {
+  color: var(--clr-primary-1);
+}
+.contact-methods span {
+  color: var(--clr-grey-1);
+}
+@media screen and (max-width: 768px) {
+  video {
+    display: none;
+  }
+  .contact::after {
+    background: url(/images/project-1.jpeg);
+    opacity: 0.4;
+  }
+}
 /*
 =============== 
 Skills
@@ -472,6 +549,28 @@ Blog
 Footer
 ===============
 */
+
+.footer {
+  padding-bottom: 2rem;
+  background: var(--clr-primary-1);
+  display: grid;
+  place-items: center;
+}
+.footer .social-icons {
+  margin-bottom: 2rem;
+}
+
+.footer .social-icon,
+.footer p {
+  color: var(--clr-primary-10);
+}
+.footer .social-icon:hover {
+  color: var(--clr-links);
+}
+.footer p {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
 /*
 =============== 
 Single Page
