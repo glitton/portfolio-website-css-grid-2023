@@ -430,7 +430,7 @@ About
   }
   .about-img::before {
     left: -2rem;
-    height: 100%;
+    height: 92%;
   }
   .about-info {
     align-self: center;
@@ -438,20 +438,48 @@ About
 }
 /*
 =============== 
-Services
+Skills
 ===============
 */
-/* small screen layout setup */
-/* bg-grey in globals */
+.skills-section {
+  background: var(--clr-primary-10);
+}
+.skill-container img {
+  height: 100px;
+  width: auto;
+}
+.skills-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 3rem;
+}
+.single-skill {
+  margin: 0 auto;
+}
+.skill-title {
+  text-align: center;
+  padding-top: 0.75rem;
+}
+@media screen and (min-width: 992px) {
+  .skills-center {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 3rem 8rem;
+  }
+  .skill-container img {
+    height: 140px;
+    width: auto;
+  }
 
+  .about-info {
+    align-self: center;
+  }
+}
 /*
 =============== 
 Projects
 ===============
 */
-.projects-section {
-  background: var(--clr-primary-10);
-}
+
 .single-project {
   background: var(--clr-grey-10);
   border-radius: var(--radius);
@@ -585,11 +613,7 @@ Contact
     opacity: 0.4;
   }
 }
-/*
-=============== 
-Skills
-===============
-*/
+
 /*
 =============== 
 Timeline
