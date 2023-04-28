@@ -444,36 +444,24 @@ Skills
 .skills-section {
   background: var(--clr-primary-10);
 }
-.skill-container img {
-  height: 100px;
-  width: auto;
-}
 .skills-center {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  display: flex;
+  justify-content: center;
+  align-content: center;
   gap: 3rem;
 }
-.single-skill {
-  margin: 0 auto;
+.skill-container {
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.skill-container img {
+  height: 140px;
+  width: auto;
 }
 .skill-title {
-  text-align: center;
   padding-top: 0.75rem;
 }
-@media screen and (min-width: 992px) {
-  .skills-center {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 3rem 8rem;
-  }
-  .skill-container img {
-    height: 140px;
-    width: auto;
-  }
 
-  .about-info {
-    align-self: center;
-  }
-}
 /*
 =============== 
 Projects
@@ -616,18 +604,6 @@ Contact
 
 /*
 =============== 
-Timeline
-===============
-*/
-
-/*
-=============== 
-Blog
-===============
-*/
-
-/*
-=============== 
 Footer
 ===============
 */
@@ -653,14 +629,3 @@ Footer
   text-transform: capitalize;
   font-size: 0.8rem;
 }
-/*
-=============== 
-Single Page
-===============
-*/
-
-/*
-=============== 
-Products Page
-===============
-*/

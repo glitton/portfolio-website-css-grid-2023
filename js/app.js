@@ -20,9 +20,25 @@ closeBtn.addEventListener("click", function () {
 });
 // set year
 date.innerHTML = new Date().getFullYear();
-// Glider carousel code
-window.addEventListener("load", function () {
-  new Glider(document.querySelector(".glider"), {
-    setting_name: setting_value,
-  });
+
+// tiny slider js
+let slider = tns({
+  container: ".skills-center",
+  loop: true,
+  speed: 300,
+  items: 3,
+  slideBy: 3,
+  nav: false,
+  autoplay: true,
+  controls: false,
+  autoplayButtonOutput: false,
+  gutter: 280,
+  responsive: {
+    1024: {
+      items: 2,
+    },
+    768: {
+      items: 1,
+    },
+  },
 });
